@@ -1532,6 +1532,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react-native-assets/slider@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.npmjs.org/@react-native-assets/slider/-/slider-7.2.1.tgz"
+  integrity sha512-8n1IBQ6QSBMwL+GasCEgHctsjcJwpZ3eioTgL7nyOSteOnmDTsyNVjUU5zQ80YeZOvSWQTeIQ7g30ikfbK4t1A==
+
 "@react-native-async-storage/async-storage@^1.23.1":
   version "1.23.1"
   resolved "https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-1.23.1.tgz"
