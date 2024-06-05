@@ -11,7 +11,7 @@ export default function Card(props: CardProps) {
   return (
     <View style={styles.container}>
       {props.type === 'image' ? (
-        <Image source={cardsUri[props.name].image} style={styles.image} />
+        <Image source={cardsUri[props.name].image} resizeMode='center' style={styles.image} />
       ) : props.type === 'text' ? (
         <Text style={[styles.text, {fontSize: 24, textTransform: 'capitalize'}]}>{props.name}</Text>
       ) : (
@@ -23,18 +23,18 @@ export default function Card(props: CardProps) {
 
 const styles = StyleSheet.create({
   container: {
-    borderWidth: 5,
+    borderWidth: 3,
     borderColor: Colors.black,
-    borderRadius: 20,
+    borderRadius: 10,
     backgroundColor: Colors.white,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 200,
+    width: '100%',
     aspectRatio: 0.65 / 1,
   },
   image: {
     height: '50%',
-    aspectRatio: 1 / 1.5,
+    // aspectRatio: 1 / 1.5,
   },
   text: {
     fontSize: 18,

@@ -27,7 +27,7 @@ const TutorialItem = ({item, index, flatlistRef, navigation}: Props) => {
     <View style={{width: SCREEN_WIDTH, justifyContent: 'center'}}>
       <View style={styles.box}>
         <Text style={[styles.text, {fontSize: 32}]}>{item.title}</Text>
-        <View style={{flexDirection: 'row', gap: 10, justifyContent: 'center'}}>
+        <View style={{flexDirection: 'row', gap: 10, width: '50%', alignSelf: 'center', justifyContent: 'center'}}>
           <Card name="mouse" type={item.first}/>
           <Card name="mouse" type={item.second}/>
         </View>

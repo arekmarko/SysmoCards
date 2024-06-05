@@ -1,5 +1,22 @@
 export const cardsUri: {[index: string]:any} = {
     kropka: {image: require('./assets/Kropka.png'), desc: 'Kropka'},
+    '404-error': {image: require('./assets/cards/404-error.png'), desc: ''},
+    bug1: {image: require('./assets/cards/bug1.png'), desc: ''},
+    cpu: {image: require('./assets/cards/cpu.png'), desc: ''},
+    coding: {image: require('./assets/cards/coding.png'), desc: ''},
+    email: {image: require('./assets/cards/email.png'), desc: ''},
+    engineer: {image: require('./assets/cards/engineer.png'), desc: ''},
+    html: {image: require('./assets/cards/html.png'), desc: ''},
+    icloud: {image: require('./assets/cards/icloud.png'), desc: ''},
+    joystick: {image: require('./assets/cards/joystick.png'), desc: ''},
+    laptop: {image: require('./assets/cards/laptop.png'), desc: ''},
+    modem: {image: require('./assets/cards/modem.png'), desc: ''},
     mouse: {image: require('./assets/cards/mouse.png'), desc: 'A device used to interact with a computer'},
-    'coding': require('./assets/cards/coding.png')
+    'no-internet': {image: require('./assets/cards/no-internet.png'), desc: ''},
+    plugin: {image: require('./assets/cards/plugin.png'), desc: 'A device used to interact with a computer'},
+    'robot-assistant': {image: require('./assets/cards/robot-assistant.png'), desc: 'A device used to interact with a computer'},
+    'usb-drive': {image: require('./assets/cards/usb-drive.png'), desc: 'A device used to interact with a computer'},
+    webpage: {image: require('./assets/cards/webpage.png'), desc: 'A device used to interact with a computer'},
+    'wifi-signal': {image: require('./assets/cards/wifi-signal.png'), desc: 'A device used to interact with a computer'},
+    
 }
