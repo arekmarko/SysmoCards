@@ -1,9 +1,10 @@
 import {StyleSheet, Text, TouchableNativeFeedback, View} from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import BackButton from '../components/BackButton';
 import {Colors} from '../colors';
 
-export default function SelectLevel() {
+export default function SelectLevel({navigation}:any) {
+    const [level, setLevel] = useState('');
   return (
     <View style={styles.container}>
       <BackButton />
@@ -11,23 +12,23 @@ export default function SelectLevel() {
         <Text style={styles.text}>Select difficulty Level</Text>
       </View>
       <View style={{gap: 20, width: '60%'}}>
-        <TouchableNativeFeedback>
-          <View style={styles.button}>
+        <TouchableNativeFeedback onPress={() => setLevel('easy')}>
+          <View style={level == 'easy' ? styles.selectedButton : styles.button}>
             <Text style={styles.text}>easy</Text>
           </View>
         </TouchableNativeFeedback>
-        <TouchableNativeFeedback>
-          <View style={styles.button}>
+        <TouchableNativeFeedback onPress={() => setLevel('medium')}>
+          <View style={level == 'medium' ? styles.selectedButton : styles.button}>
             <Text style={styles.text}>medium</Text>
           </View>
         </TouchableNativeFeedback>
-        <TouchableNativeFeedback>
-          <View style={styles.button}>
+        <TouchableNativeFeedback onPress={() => setLevel('hard')}>
+          <View style={level == 'hard' ? styles.selectedButton : styles.button}>
             <Text style={styles.text}>hard</Text>
           </View>
         </TouchableNativeFeedback>
       </View>
-      <TouchableNativeFeedback>
+      <TouchableNativeFeedback onPress={() => navigation.navigate('game')}>
         <View style={[styles.background, {width: '100%'}]}>
           <Text style={[styles.text, {fontWeight: '900', fontSize: 32}]}>
             play
@@ -68,4 +69,12 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'center',
   },
+  selectedButton: {
+    backgroundColor: Colors.orange,
+    borderWidth: 2,
+    borderColor: Colors.grey,
+    borderRadius: 50,
+    padding: 20,
+    alignItems: 'center',
+  }
 });

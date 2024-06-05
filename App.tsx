@@ -8,6 +8,7 @@ import Settings from "./Screens/Settings";
 import Support from "./Screens/Support";
 import Tutorial from "./Screens/Tutorial";
 import SelectLevel from "./Screens/SelectLevel";
+import Game from "./Screens/Game";
 
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name='support' component={Support} />
         <Stack.Screen name='tutorial' component={Tutorial} />
         <Stack.Screen name='selectLevel' component={SelectLevel} />
+        <Stack.Screen name='game' component={Game} />
       </Stack.Navigator>
     </NavigationContainer>
   )
