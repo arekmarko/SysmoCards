@@ -59,7 +59,7 @@ export default function Settings({navigation}: any) {
             </View>
         </View>
       </View>
-      <TouchableHighlight>
+      <TouchableHighlight onPress={() => navigation.navigate('support')}>
         <View style={styles.supportButton}>
           <Text style={styles.text}>SUPPORT</Text>
         </View>

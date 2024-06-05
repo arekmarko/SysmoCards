@@ -27,7 +27,7 @@ export default function Homepage({navigation}:any) {
     <View style={styles.container}>
       <Image source={require('../assets/Group75.png')} style={styles.image} />
       <View style={styles.buttons}>
-        <TouchableHighlight>
+        <TouchableHighlight onPress={() => navigation.navigate('tutorial')}>
           <View style={styles.startButton}>
             <Text style={styles.text}>START</Text>
           </View>
@@ -37,7 +37,7 @@ export default function Homepage({navigation}:any) {
             <Text style={styles.text}>SETTINGS</Text>
           </View>
         </TouchableHighlight>
-        <TouchableHighlight>
+        <TouchableHighlight onPress={() => navigation.navigate('support')}>
           <View style={styles.button}>
             <Text style={styles.text}>SUPPORT</Text>
           </View>
